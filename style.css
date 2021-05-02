@@ -406,4 +406,32 @@ body {
   font-size: 1.6rem;
 }
 /* End of news feed navigation */
+/* News feed content */
+.news-feed-content {
+  display: grid;
+  grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  padding-top: 6.5rem;
+}
+.news-feed-header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: white;
+  margin-top: 1.5rem;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #eee;
+  padding: 1.5rem;
+}
+.header-top h4 {
+  font-size: 2.2rem;
+}
+.header-top i {
+  font-size: 2rem;
+  color: #1aa1f5;
+}
+/* End of News feed content */
 /* End of news feed page */
