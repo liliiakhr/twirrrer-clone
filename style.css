@@ -180,7 +180,7 @@ body {
 .login-page {
   width: 100%;
   height: 100vh;
-  display: grid;
+  display: none;
   grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
   grid-template-rows: repeat(2, min-content) 1fr;
   grid-row-gap: 1.5rem;
@@ -322,3 +322,88 @@ body {
 }
 /* end of login */
 /* end of login page */
+
+/* NEWS FEED page */
+.news-feed-page {
+  width: 100%;
+  height: 100vh;
+}
+/* News feed navigation */
+.news-feed-nav {
+  position: fixed;
+  width: 100%;
+  height: 6.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons a {
+  text-decoration: none;
+  margin-right: 7rem;
+  font-size: 2.5rem;
+  color: #9e9a9a;
+}
+.icons .active {
+  color: #1aa1f7;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* position assigned to place the icon nside thi div as absolute */
+}
+.search-bar-input {
+  width: 35rem;
+  height: 3rem;
+  border: 0.1rem solid #d6e1e9;
+  border-radius: 2rem;
+  background-color: #d6e1ed;
+  padding-left: 5rem;
+  transition: all 0.3s;
+}
+.search-bar-input:focus {
+  background-color: white;
+  border-color: #1aa1f5;
+}
+
+.search-bar i {
+  position: absolute;
+  font-size: 1.7rem;
+  left: 1.5rem;
+  color: #9e9a9a;
+}
+.user {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.user-img-wrapper {
+  width: 4rem;
+  height: 4rem;
+}
+.user-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #444;
+}
+.user i {
+  color: #444;
+  font-size: 1.6rem;
+}
+/* End of news feed navigation */
+/* End of news feed page */
