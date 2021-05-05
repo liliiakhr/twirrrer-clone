@@ -102,8 +102,16 @@
         <div class="login-content">
           <h2>Log in to Twirrrer</h2>
           <form class="login-form">
-            <input type="text" placeholder="Phone, email, or username" />
-            <input type="password" placeholder="Password" />
+            <input
+              type="text"
+              class="login-user-info"
+              placeholder="Phone, email, or username"
+            />
+            <input
+              type="password"
+              class="login-password"
+              placeholder="Password"
+            />
             <div>
               <button type="button" class="login-form-btn">Log In</button>
               <input type="checkbox" class="login-form-checkbox" id="check" />
@@ -118,6 +126,15 @@
         </footer>
       </div>
       <!-- end of login -->
+      <!-- login modal box -->
+      <div class="login-modal">
+        <i class="fas fa-times"></i>
+        <p>
+          The username and password you entered did not match our records.
+          Please double check and try again.
+        </p>
+      </div>
+      <!-- end of login modal box -->
     </section>
     <!-- end of login page -->
     <!-- NEWS FEED page -->
@@ -355,6 +372,31 @@
       <button class="post-btn" type="button">
         <i class="fas fa-feather-alt"> Post</i>
       </button>
+      <!-- Post modal -->
+      <div class="modal-wrapper">
+        <div class="modal">
+          <div class="modal-header">
+            <i class="fas fa-times"></i>
+            <button type="button">Post</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="images/user1.jpg" />
+            </div>
+            <input type="text" class="modal-input" />
+            <i class="far fa-smile"></i>
+          </div>
+          <div class="modal-footer">
+            <div class="modal-icons">
+              <i class="far fa-image"></i>
+              <i class="fas fa-camera"></i>
+              <i class="far fa-chart-bar"></i>
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of post modal -->
     </section>
     <!-- End of FEED page -->
     <script src="script.js"></script>
