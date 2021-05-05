@@ -72,6 +72,10 @@ const changeOpacity = (x) => {
 postModalX.addEventListener("click", () => {
   modal.style.display = "none";
   modalWrapper.classList.remove("modal-wrapper-display");
+  if (modalInput.value !== "") {
+    modalInput.value = "";
+    changeOpacity(0.5);
+  }
 });
 
 modalInput.addEventListener("keypress", (e) => {
