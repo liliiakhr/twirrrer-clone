@@ -18,6 +18,8 @@ const user = document.querySelector(".user");
 const sidebar = document.querySelector(".sidebar");
 const sidebarWrapper = document.querySelector(".sidebar-wrapper");
 const xBtnSidebar = document.querySelector(".sidebar-header i");
+const toggle = document.querySelector(".toggle");
+const circle = document.querySelector(".circle");
 // **************************
 // **************************
 // Main page
@@ -100,4 +102,10 @@ user.addEventListener("click", () => {
 xBtnSidebar.addEventListener("click", () => {
   sidebar.classList.remove("sidebar-display");
   sidebarWrapper.classList.remove("sidebar-wrapper-display");
+});
+
+// Dark mode
+
+toggle.addEventListener("click", () => {
+  circle.classList.toggle("move");
 });
