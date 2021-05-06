@@ -17,6 +17,7 @@ const modalInput = document.querySelector(".modal-input");
 const user = document.querySelector(".user");
 const sidebar = document.querySelector(".sidebar");
 const sidebarWrapper = document.querySelector(".sidebar-wrapper");
+const xBtnSidebar = document.querySelector(".sidebar-header i");
 // **************************
 // **************************
 // Main page
@@ -94,4 +95,9 @@ modalInput.addEventListener("blur", (e) => {
 user.addEventListener("click", () => {
   sidebar.classList.add("sidebar-display");
   sidebarWrapper.classList.add("sidebar-wrapper-display");
+});
+
+xBtnSidebar.addEventListener("click", () => {
+  sidebar.classList.remove("sidebar-display");
+  sidebarWrapper.classList.remove("sidebar-wrapper-display");
 });
