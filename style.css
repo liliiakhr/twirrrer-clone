@@ -915,15 +915,14 @@ body {
   background-color: #1c2938;
 }
 .dark-2 {
-  background-color: #10171e;
+  background-color: #10171e !important;
 }
 .light {
   color: white;
 }
 .border-color {
-  color: #444;
+  border-color: #444 !important;
 }
 /* end of dark mode */
-
 /* End of sidebar */
 /* End of news feed page */ ;

@@ -107,6 +107,8 @@ xBtnSidebar.addEventListener("click", () => {
 // Dark mode
 const darkElements1 = document.querySelectorAll(".dark-mode-1");
 const darkElements2 = document.querySelectorAll(".dark-mode-2");
+const lightTexts = document.querySelectorAll(".light-text");
+const borders = document.querySelectorAll(".border");
 
 toggle.addEventListener("click", () => {
   circle.classList.toggle("move");
@@ -115,5 +117,11 @@ toggle.addEventListener("click", () => {
   );
   Array.from(darkElements2).map((darkEl2) =>
     darkEl2.classList.toggle("dark-2")
+  );
+  Array.from(lightTexts).map((lightText) =>
+    lightText.classList.toggle("light")
+  );
+  Array.from(borders).map((borderColor) =>
+    borderColor.classList.toggle("border-color")
   );
 });
