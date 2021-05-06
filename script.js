@@ -105,7 +105,11 @@ xBtnSidebar.addEventListener("click", () => {
 });
 
 // Dark mode
+const darkElements1 = document.querySelectorAll(".dark-mode-1");
 
 toggle.addEventListener("click", () => {
   circle.classList.toggle("move");
+  Array.from(darkElements1).map((darkEl1) =>
+    darkEl1.classList.toggle("dark-1")
+  );
 });
